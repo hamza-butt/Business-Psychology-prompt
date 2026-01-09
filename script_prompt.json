@@ -34,12 +34,8 @@
             "topic": "String (Topic in German)",
             "hook": "String (The first sentence spoken - Hook - German)",
             "script": [
-                {
-                    "text": "String (Sentence 1 - German)"
-                },
-                {
-                    "text": "String (Sentence 2 - German)"
-                }
+                "String (Sentence 1 - German)",
+                "String (Sentence 2 - German)"
             ],
             "title": "String (Clickbait title for TikTok - German)",
             "description": "String (Detailed German description explaining the reel concept in depth for the caption)",
