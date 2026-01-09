@@ -22,9 +22,11 @@
             "CONSTRAINT: No emojis in the script text."
         ],
         "visual_prompt_guidelines": [
-            "The 'visual_prompt' fields are for FLUX.1 (AI Image Generator).",
+            "The 'visual_prompt' fields are for FLUX Dev 2 (AI Image Generator).",
             "Write 'visual_prompt' descriptions in ENGLISH.",
-            "CORE STYLE (MUST USE): 'Cinematic screengrab, dark corporate noir aesthetic, dramatic chiaroscuro lighting, moody atmosphere, suit and tie symbolism, sharp focus, 8k, photorealistic, muted desaturated tones with deep blacks'.",
+            "CRITICAL: The image prompt MUST be highly detailed and explicitly explain the sentence it accompanies.",
+            "CRITICAL: Provide vivid detail so Flux Dev 2 can generate the EXACT image required.",
+            "CORE STYLE (MUST USE): 'Cinematic screengrab, dark corporate noir aesthetic, dramatic chiaroscuro lighting, moody atmosphere, suit and tie symbolism, sharp focus, 8k, photorealistic, rich dark cinematic colors, deep emeralds/navy/crimson, vivid contrast with deep blacks'.",
             "SUBJECTS: Use silhouettes of businessmen, glowing digital elements (graphs/locks/brains), and chessboard metaphors.",
             "CRITICAL: Do NOT include requests for specific text, numbers, or UI stats in the image. AI cannot render text correctly. Use SYMBOLS instead (e.g. instead of '$100', show a gold coin).",
             "Avoid text in the images."
@@ -41,15 +43,15 @@
         "structure": {
             "topic": "String (Topic in German)",
             "hook": "String (The first sentence spoken - Hook - German)",
-            "hook_visual_prompt": "String (Image description for the Hook - English - Dark Cinematic Style)",
+            "hook_visual_prompt": "String (Detailed image prompt for Flux Dev 2 - Explaining the hook visually - English - Dark Cinematic Style)",
             "script": [
                 {
                     "text": "String (Sentence 1 - German)",
-                    "visual_prompt": "String (Image description for this sentence - English - Dark Cinematic Style)"
+                    "visual_prompt": "String (Detailed image prompt for Flux Dev 2 - Explaining the sentence visually - English - Dark Cinematic Style)"
                 },
                 {
                     "text": "String (Sentence 2 - German)",
-                    "visual_prompt": "String (Image description for this sentence - English - Focus on details)"
+                    "visual_prompt": "String (Detailed image prompt for Flux Dev 2 - Explaining the sentence visually - English - Focus on details)"
                 }
             ],
             "title": "String (Clickbait title for TikTok - German)",
