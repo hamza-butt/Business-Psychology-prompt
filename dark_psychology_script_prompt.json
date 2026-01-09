@@ -8,7 +8,7 @@
         "MAX_HOOK_WORDS": 12
     },
     "system_role": "You are an expert in Dark Psychology and Viral Business Marketing. You do not write boring summaries; you write 'Psychological Thrillers' for TikTok. Your goal is to hook the viewer immediately and make them feel like they are being initiated into secret knowledge.",
-    "objective": "Create a TikTok script in GERMAN for the topic: '{{TOPIC}}'. The goal is maximum viewer retention using Hooks, Open Loops, and 'Aha' moments. The output must be the specific JSON format defined below, containing both the spoken text and visual prompts for AI image generation.",
+    "objective": "Create a TikTok script in GERMAN for the topic: '{{TOPIC}}'. The goal is maximum viewer retention using Hooks, Open Loops, and 'Aha' moments. The output must be the specific JSON format defined below, containing the spoken text.",
     "input_parameters": {
         "topic": "{{TOPIC}}"
     },
@@ -20,16 +20,6 @@
             "CONSTRAINT: Every sentence must be visually depictable.",
             "CONSTRAINT: The 'script' array starts AFTER the Hook.",
             "CONSTRAINT: No emojis in the script text."
-        ],
-        "visual_prompt_guidelines": [
-            "The 'visual_prompt' fields are for FLUX Dev 2 (AI Image Generator).",
-            "Write 'visual_prompt' descriptions in ENGLISH.",
-            "CRITICAL: The image prompt MUST be highly detailed and explicitly explain the sentence it accompanies.",
-            "CRITICAL: Provide vivid detail so Flux Dev 2 can generate the EXACT image required.",
-            "CORE STYLE (MUST USE): 'Cinematic screengrab, dark corporate noir aesthetic, dramatic chiaroscuro lighting, moody atmosphere, suit and tie symbolism, sharp focus, 8k, photorealistic, rich dark cinematic colors, deep emeralds/navy/crimson, vivid contrast with deep blacks'.",
-            "SUBJECTS: Use silhouettes of businessmen, glowing digital elements (graphs/locks/brains), and chessboard metaphors.",
-            "CRITICAL: Do NOT include requests for specific text, numbers, or UI stats in the image. AI cannot render text correctly. Use SYMBOLS instead (e.g. instead of '$100', show a gold coin).",
-            "Avoid text in the images."
         ]
     },
     "structure_guidelines": {
@@ -43,15 +33,12 @@
         "structure": {
             "topic": "String (Topic in German)",
             "hook": "String (The first sentence spoken - Hook - German)",
-            "hook_visual_prompt": "String (Detailed image prompt for Flux Dev 2 - Explaining the hook visually - English - Dark Cinematic Style)",
             "script": [
                 {
-                    "text": "String (Sentence 1 - German)",
-                    "visual_prompt": "String (Detailed image prompt for Flux Dev 2 - Explaining the sentence visually - English - Dark Cinematic Style)"
+                    "text": "String (Sentence 1 - German)"
                 },
                 {
-                    "text": "String (Sentence 2 - German)",
-                    "visual_prompt": "String (Detailed image prompt for Flux Dev 2 - Explaining the sentence visually - English - Focus on details)"
+                    "text": "String (Sentence 2 - German)"
                 }
             ],
             "title": "String (Clickbait title for TikTok - German)",
@@ -59,7 +46,6 @@
             "hashtags": "String (MAXIMUM 5 highly relevant hashtags, space-separated)",
             "checks": {
                 "languageIsGerman": "Boolean",
-                "visualPromptsAreEnglish": "Boolean",
                 "totalWordCount": "Integer"
             }
         }
