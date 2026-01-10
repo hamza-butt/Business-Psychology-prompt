@@ -18,6 +18,7 @@
         "constraints": [
             "CRITICAL: Target word count {{MIN_TARGET_WORDS}}-{{MAX_TARGET_WORDS}} words total (approx. 60 seconds).",
             "CONSTRAINT: Every sentence must be visually depictable.",
+            "CONSTRAINT: Provide a concise English 'subject' for the Hook and each script sentence to guide image generation.",
             "CONSTRAINT: The 'script' array starts AFTER the Hook.",
             "CONSTRAINT: No emojis in the script text."
         ]
@@ -32,10 +33,15 @@
         "format": "JSON",
         "structure": {
             "topic": "String (Topic in German)",
-            "hook": "String (The first sentence spoken - Hook - German)",
+            "hook": {
+                "text": "String (The first sentence spoken - Hook - German)",
+                "subject": "String (Main subject of the sentence for image generation - English)"
+            },
             "script": [
-                "String (Sentence 1 - German)",
-                "String (Sentence 2 - German)"
+                {
+                    "text": "String (Sentence - German)",
+                    "subject": "String (Main subject of the sentence for image generation - English)"
+                }
             ],
             "title": "String (Clickbait title for TikTok - German)",
             "description": "String (Detailed German description explaining the reel concept in depth for the caption)",
