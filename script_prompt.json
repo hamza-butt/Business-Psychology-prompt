@@ -19,6 +19,7 @@
             "CRITICAL: Target word count {{MIN_TARGET_WORDS}}-{{MAX_TARGET_WORDS}} words total (approx. 60 seconds).",
             "CONSTRAINT: Every sentence must be visually depictable.",
             "CONSTRAINT: Provide a concise English 'subject' for the Hook and each script sentence to guide image generation.",
+            "CONSTRAINT: Ensure every sentence is written around ONE clear main subject to facilitate focused image generation.",
             "CONSTRAINT: The 'script' array starts AFTER the Hook.",
             "CONSTRAINT: No emojis in the script text."
         ]
@@ -35,12 +36,12 @@
             "topic": "String (Topic in German)",
             "hook": {
                 "text": "String (The first sentence spoken - Hook - German)",
-                "subject": "String (Main subject of the sentence for image generation - English)"
+                "subject": "String (The SINGLE main subject of the sentence - English)"
             },
             "script": [
                 {
                     "text": "String (Sentence - German)",
-                    "subject": "String (Main subject of the sentence for image generation - English)"
+                    "subject": "String (The SINGLE main subject of the sentence - English)"
                 }
             ],
             "title": "String (Clickbait title for TikTok - German)",
