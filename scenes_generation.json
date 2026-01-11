@@ -16,16 +16,16 @@
         "step_4_thumbnail": "Select the most visually arresting scene to create a specialized 'thumbnailPrompt'."
     },
     "global_visual_style": {
-        "aesthetic": "Dark Corporate Noir / Cinematic Thriller. Think 'Succession' meets 'Mr. Robot' with a touch of 'American Psycho'. High-end, polished, cold, and intimidating.",
+        "aesthetic": "Dark Corporate Noir / Cinematic Thriller. Use a consistent high-end, cold, and intimidating look. Think 'Succession' and 'Mr. Robot'.",
+        "visual_elements": "Glass skyscrapers at night, polished mahogany conference tables, reflections in windows, tailored expensive suits, luxury watches, cold steel, and brutalist concrete.",
         "atmosphere": "Cold, calculated, mysterious, high-stakes. A world of shadow deals, boardroom power plays, and psychological manipulation.",
-        "textures": "Sleek glass, polished marble, expensive suit fabrics, cold steel, contrasted with harsh concrete or digital noise.",
-        "lighting": "Cinematic 'Chiaroscuro'. Low-key lighting, heavy shadows, silhouettes. Dramatic rim lighting.",
-        "composition": "Symmetrical framing (power), slightly low angles (dominance), or isolation (vulnerability). 9:16 vertical framing."
+        "lighting": "Cinematic 'Chiaroscuro'. Low-key lighting, heavy shadows (silhouettes), cold blue/grey tones with occasional warm tungsten accents for contrast.",
+        "composition": "Symmetrical framing (representing control), slightly low angles (dominance), or isolation (vulnerability). 9:16 vertical framing."
     },
     "prompt_construction_rules": {
-        "natural_language": "Write fluid, descriptive sentences. Focus on atmosphere, lighting, and texture.",
-        "flux_formula": "Start with the 'subject' (e.g., 'A red warning sign glowing in the dark'). Elaborate on it using the 'text' context (e.g., 'looming over a small, anxious figure'). End with style keywords.",
-        "style_keywords": "Include these keywords in every prompt for consistency: 'cinematic photography, dark corporate noir, psychological thriller, dramatic lighting, 8k, photorealistic, highly detailed, cold color palette'.",
+        "natural_language": "Write fluid, descriptive sentences. Focus strictly on the visual elements defined in 'global_visual_style'.",
+        "flux_formula": "Start with the 'subject'. Elaborate with textures and lighting from 'global_visual_style'. ALWAYS End with 'style_keywords'.",
+        "style_keywords": "YOU MUST APPEND THESE EXACT KEYWORDS TO EVERY PROMPT: 'cinematic photography, dark corporate noir, psychological thriller, dramatic lighting, 8k, photorealistic, highly detailed, cold color palette, film grain'.",
         "censorship_safe_words": "Use words like 'intensified', 'threatening presence', 'shadowy figure', 'symbolic rupture' instead of violent terms.",
         "text_ban": "Strictly enforce NO TEXT inside the image. Add ' --no text' at the end of every prompt."
     },
