@@ -18,7 +18,8 @@
         "constraints": [
             "CRITICAL: Target word count {{MIN_TARGET_WORDS}}-{{MAX_TARGET_WORDS}} words total (approx. 60 seconds).",
             "CONSTRAINT: Every sentence must be visually depictable.",
-            "CONSTRAINT: Provide a concise English 'Visual Subject Description' for the Hook and each script sentence to guide image generation (e.g., 'Anxious person looking at phone' instead of just 'Anxiety').",
+            "CONSTRAINT: Provide a concise English 'Visual Subject Description' for the Hook and each script sentence to guide image generation.",
+            "CONSTRAINT: Provide 'search_keywords' (English) for each sentence, optimized for Pixabay/Stock Video search (1-3 words, visual).",
             "CONSTRAINT: Ensure every sentence is written around ONE clear main visual subject.",
             "CONSTRAINT: The 'script' array starts AFTER the Hook.",
             "CONSTRAINT: No emojis in the script text."
@@ -36,12 +37,14 @@
             "topic": "String (Topic in German)",
             "hook": {
                 "text": "String (The first sentence spoken - Hook - German)",
-                "subject": "String (Visual Subject Description for image generation - English - e.g 'Red Warning Sign')"
+                "subject": "String (Visual Subject Description for image generation - English - e.g 'Red Warning Sign')",
+                "search_keywords": "String (English keywords for Pixabay video search - e.g. 'alarm light')"
             },
             "script": [
                 {
                     "text": "String (Sentence - German)",
-                    "subject": "String (Visual Subject Description for image generation - English - e.g 'Person holding phone')"
+                    "subject": "String (Visual Subject Description for image generation - English - e.g 'Person holding phone')",
+                    "search_keywords": "String (English keywords for Pixabay video search - e.g. 'smartphone addiction')"
                 }
             ],
             "title": "String (Clickbait title for TikTok - German)",
